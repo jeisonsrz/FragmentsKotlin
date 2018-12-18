@@ -12,6 +12,8 @@ import kotlinx.android.synthetic.main.fragment_color.*
 class ColorFragment : Fragment() {
 
         var color:Int = 0
+
+    
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         color = arguments?.getInt("color") ?: 0

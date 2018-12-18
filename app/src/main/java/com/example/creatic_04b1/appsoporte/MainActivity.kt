@@ -9,11 +9,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        supportFragmentManager.beginTransaction().apply {
-            add(R.id.container1, ColorFragment.instance(ColorFragment.BLUE))
-            add(R.id.container2, ColorFragment.instance(ColorFragment.GREEN))
+        supportFragmentManager.beginTransaction()
+            .add(R.id.container1, ColorFragment.instance(ColorFragment.BLUE))
+            .add(R.id.container2, ColorFragment.instance(ColorFragment.GREEN))
 
-        }.commit()
+        .commit()
 
     }
 }
